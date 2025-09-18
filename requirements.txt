@@ -3,4 +3,6 @@ pandas==2.3.2
 prophet==1.1.7
 streamlit==1.49.1
 streamlit-card==1.0.2
+plotly==6.3.0
+
 
