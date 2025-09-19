@@ -14,7 +14,7 @@ except Exception:
 # Dummy dataset builder
 # -------------------------------
 @st.cache_data
-def make_dummy_mushroom_timeseries(n_days=180, seed=42):
+def make_dummy_mushroom_timeseries(n_days=60, seed=42):
     rng = np.random.default_rng(seed)
     dates = pd.date_range("2025-01-01", periods=n_days, freq="D")
     # Simple, smoothish signals + noise
@@ -176,4 +176,5 @@ elif page == "Forecast (Prophet)":
 - You can tune seasonality (daily/weekly/yearly), add holidays, or include **extra regressors** (e.g., temperature while forecasting CO₂).
                 """
             )
+
 
